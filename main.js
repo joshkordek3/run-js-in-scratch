@@ -9,33 +9,33 @@ class Blocks {
       blocks: [
         {
           opcode: 'getJS',
-          blockType: BlockType.REPORTER,
+          blockType: 'reporter,
           text: '[JS]',
           arguments: {
             JS: {
-                type: ArgumentType.STRING,
+                type: 'string',
                 defaultValue: 'JS'
             }
           }
         }, 
         {
           opcode: 'executeJS',
-          blockType: BlockType.COMMAND,
+          blockType: 'command',
           text: 'execute [evalObject]',
           arguments: {
             evalObject: {
-                type: ArgumentType.STRING,
+                type: 'string',
                 defaultValue:'JS eval object'
             }
           }
         }, 
         {
           opcode: 'executeJSReport',
-          blockType: BlockType.REPORTER,
+          blockType: 'reporter',
           text: 'get value [evalObject]',
           arguments: {
             evalObject: {
-                type: ArgumentType.STRING,
+                type: 'string',
                 defaultValue:'JS eval object'
             }
           }
