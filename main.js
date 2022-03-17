@@ -43,13 +43,13 @@ class Blocks {
       ]
     };
   };
-  getJS (JS) {
-    return eval('function () { JS }');
+  getJS ({ JS }) {
+    return eval(`function () { ${JS} }`);
   }
-  executeJS (evalObject) {
+  executeJS ({ evalObject }) {
     evalObject();
   }
-  executeJSReport (evalObject) {
+  executeJSReport ({ evalObject }) {
     return evalObject();
   }
 }
