@@ -1,4 +1,7 @@
 class Blocks {
+  constructor (rt) {
+    self.runtime = rt;
+  }
   getInfo () {
     return {
       id: 'someBlocks',
